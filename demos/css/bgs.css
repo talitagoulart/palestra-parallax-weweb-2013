@@ -1,0 +1,43 @@
+html, body {
+	height: 100%;
+}
+body {
+	margin: 0;
+}
+.section {
+	background: url('../img/bg1.jpg') no-repeat fixed 50% 0 transparent;
+	min-height: 100%;
+	box-shadow: 0 2px 5px #000;
+	overflow: hidden;
+}
+.section.bg2 {
+	background-image: url('../img/bg2.png');
+}
+.section.bg3 {
+	background-image: url('../img/bg3.jpg');
+}
+.section.bg4 {
+	background-image: url('../img/bg4.png');
+}
+.texto {
+	width: 50%;
+	margin: 10% auto 0;
+	text-align: center;
+	color: #fff;
+	text-shadow: 1px 1px 2px #000;
+	font-family: Georgia, Arial, Helvetica, sans-serif;
+	position: relative;
+}
+.cloud {
+	position: absolute;
+	width: 125px;
+	height: 75px;
+	background: radial-gradient(circle 50px at 25px 30px, #FFF 50%, transparent 0%),
+				radial-gradient(circle 50px at 50px 25px, #FFF 50%, transparent 0%),
+				radial-gradient(circle 50px at 75px 25px, #FFF 50%, transparent 0%),
+				radial-gradient(circle 50px at 100px 30px, #FFF 50%, transparent 0%),
+				radial-gradient(circle 50px at 25px 45px, #FFF 50%, transparent 0%),
+				radial-gradient(circle 50px at 50px 50px, #FFF 50%, transparent 0%),
+				radial-gradient(circle 50px at 75px 50px, #FFF 50%, transparent 0%),
+				radial-gradient(circle 50px at 100px 45px, #FFF 50%, transparent 0%);
+}

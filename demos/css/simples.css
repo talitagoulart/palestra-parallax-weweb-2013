@@ -1,0 +1,118 @@
+body { margin: 0; }
+.stage {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #8888FF;
+	overflow: hidden;
+}
+.cloud {
+	position: absolute;
+	width: 125px;
+	height: 75px;
+	background: radial-gradient(circle 50px at 25px 30px, #FFF 50%, transparent 0%),
+				radial-gradient(circle 50px at 50px 25px, #FFF 50%, transparent 0%),
+				radial-gradient(circle 50px at 75px 25px, #FFF 50%, transparent 0%),
+				radial-gradient(circle 50px at 100px 30px, #FFF 50%, transparent 0%),
+				radial-gradient(circle 50px at 25px 45px, #FFF 50%, transparent 0%),
+				radial-gradient(circle 50px at 50px 50px, #FFF 50%, transparent 0%),
+				radial-gradient(circle 50px at 75px 50px, #FFF 50%, transparent 0%),
+				radial-gradient(circle 50px at 100px 45px, #FFF 50%, transparent 0%);
+}
+.cloud:nth-child(even) { top: 25px; }
+.cloud1 { left: 5%; }
+.cloud2 { left: 30%; }
+.cloud3 { left: 55%; }
+.cloud4 { left: 80%; }
+.sky {
+	position: absolute;
+	width: 100%;
+}
+.sky-back {
+	opacity: .7;
+	top: 10%;
+}
+.sky-front .cloud {
+	transform: scale(1.25);
+}
+.sky-front {
+	top: 20%;
+}
+.ground {
+	background: #668866;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 25%;
+}
+.tree{
+	position: absolute;
+	background: linear-gradient(to right, brown, brown),
+				radial-gradient(circle 50px at 25px 50px, #A0F556 50%, transparent 0%),
+				radial-gradient(circle 50px at 50px 25px, #A0F556 50%, transparent 0%),
+				radial-gradient(circle 50px at 75px 25px, #A0F556 50%, transparent 0%),
+				radial-gradient(circle 50px at 100px 50px, #A0F556 50%, transparent 0%),
+				radial-gradient(circle 50px at 25px 75px, #A0F556 50%, transparent 0%),
+				radial-gradient(circle 50px at 65px 70px, #A0F556 50%, transparent 0%),
+				radial-gradient(circle 50px at 100px 75px, #A0F556 50%, transparent 0%);
+	background-size: 10% 35%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%, 100% 100%;
+	background-repeat: no-repeat;
+	background-position: 50% 100%;
+	width: 125px;
+	height: 110px;
+	bottom: 0;
+}
+.tree1 { left: 10%; }
+.tree2 { right: 10% }
+.trees {
+	position: absolute;
+	width: 100%;
+}
+.trees-back {
+	bottom: 20%;
+}
+.trees-back .tree1 { left: 20%; }
+.trees-back .tree2 { right: 20% }
+.trees-front .tree{ transform: scale(1.5); }
+.trees-front {
+	top: 95%;
+}
+.road {
+	background-color: #000;
+	background-image: linear-gradient(to right, yellow 50%, transparent 50%);
+	background-size: 5% 6%;
+	background-repeat: repeat-x;
+	background-position: 50%;
+	position: absolute;
+	width: 111%;
+	height: 10%;
+	bottom: 7%;
+	left: 0;
+}
+.car {
+	position: absolute;
+	width: 50px;
+	height: 25px;
+	background: red;
+	border-radius: 50% 50% 0 0;
+	bottom: 10%;
+	left: 50%;
+}
+.wheel {
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	background-color: gray;
+	background-image: linear-gradient(45deg, black 50%, transparent 50%),
+					  linear-gradient(135deg, black 50%, transparent 50%),
+					  linear-gradient(135deg, transparent 50%, black 50%),
+					  linear-gradient(45deg, transparent 50%, black 50%);
+	background-size: 50% 50%;
+	background-repeat: no-repeat;
+	background-position: top left, top right, bottom left, bottom right;
+	bottom: -5px;
+	border-radius: 50%;
+}
+.wheel-left { left: -5px; }
+.wheel-right { right: -5px; }
